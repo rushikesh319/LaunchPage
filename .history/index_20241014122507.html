@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Full viewport height */
+      background: grey;
+    }
+    .container img {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+    }
+    .container2 {
+      width: 100%;
+      background-color: rgb(35, 142, 184);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px; /* Add padding for spacing */
+    }
+    .text {
+      color: white;
+      text-align: center; /* Center text */
+    }
+    h2 {
+      font-size: 2.5rem; /* Adjust for larger screens */
+      margin-bottom: 10px;
+    }
+    span {
+      font-size: 1.2rem; /* Smaller text for better readability */
+      max-width: 600px; /* Limit width for better legibility */
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem; /* Smaller font for mobile */
+      }
+      span {
+        font-size: 1rem; /* Adjust span font size */
+        padding: 0 10px; /* Add padding for smaller devices */
+      }
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.5rem; /* Even smaller font for very small screens */
+      }
+      span {
+        font-size: 0.9rem; /* Further adjust span font size */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> 
+    <img src="page1.png" alt="Page 1 Image">
+    <div class="container2"> 
+      <div class="text">
+        <h2>COMING SOON</h2> 
+        <span>Our Website Is Under Construction. We're Working Hard To Improve Our Website And We'll Be Launching It Soon.</span>
+      </div>
+    </div>
+    <img src="page2.png" alt="Page 2 Image">
+  </div>
+</body>
+</html>

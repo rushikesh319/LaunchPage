@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; /* Full viewport height */
+      background: grey;
+    }
+    .container img {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio without cropping */
+    }
+    .container2 {
+      width: 100%;
+      background-color: rgba(35, 142, 184, 0.9); /* Slightly transparent for overlay effect */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px; /* Add padding for spacing */
+      position: relative;
+      z-index: 1; /* Bring the text above the images */
+    }
+    .text {
+      color: white;
+      text-align: center;
+      max-width: 800px; /* Limit width for better legibility */
+    }
+    h2 {
+      font-size: 3rem; /* Larger font for main title */
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+    }
+    span {
+      font-size: 1.25rem; /* Clear and readable font size */
+      line-height: 1.5; /* Better line spacing */
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2.5rem; /* Smaller font for mobile */
+      }
+      span {
+        font-size: 1rem; /* Adjust span font size */
+      }
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 2rem; /* Even smaller font for very small screens */
+      }
+      span {
+        font-size: 0.9rem; /* Further adjust span font size */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> 
+    <img src="page1.png" alt="Page 1 Image">
+    <div class="container2"> 
+      <div class="text">
+        <h2>COMING SOON</h2> 
+        <span>Our Website Is Under Construction. We're Working Hard To Improve Our Website And We'll Be Launching It Soon.</span>
+      </div>
+    </div>
+    <img src="page2.png" alt="Page 2 Image">
+  </div>
+</body>
+</html>
